@@ -8,13 +8,13 @@ secure software engineering principles.
 
 ## 🔐 Key Features
 
-- User authentication with hashed passwords  
-- Password-based key derivation (PBKDF2)  
-- File encryption and decryption (AES via Fernet)  
-- Integrity verification using SHA-256 hashing  
-- Protection against tampered or modified encrypted files  
-- Security event logging  
-- Modular and scalable architecture  
+- User authentication with hashed passwords
+- Password-based key derivation (PBKDF2)
+- File encryption and decryption (AES via Fernet)
+- Integrity verification using SHA-256 hashing
+- Protection against tampered or modified encrypted files
+- Security event logging
+- Modular and scalable architecture
 
 ---
 
@@ -43,19 +43,17 @@ SECURE-DATA-PROTECTION-SYSTEM/
 ├── .gitignore
 └── README.md
 
-yaml
-Copy code
 
 ---
 
 ## 🔑 Security Concepts Used
 
-- **Confidentiality**: AES-based encryption using Fernet  
-- **Integrity**: SHA-256 hash verification  
-- **Authentication**: Username/password with hashing  
-- **Access Control**: Encryption and decryption allowed only after login  
-- **Defense in Depth**: Multiple independent security layers  
-- **Secure Key Management**: Password-derived keys, no static key storage  
+- **Confidentiality**: AES-based encryption using Fernet
+- **Integrity**: SHA-256 hash verification
+- **Authentication**: Username/password with hashing
+- **Access Control**: Encryption and decryption allowed only after login
+- **Defense in Depth**: Multiple independent security layers
+- **Secure Key Management**: Password-derived keys, no static key storage
 
 ---
 
@@ -65,17 +63,3 @@ Copy code
 ```bash
 git clone https://github.com/jatin-rajputt/secure-data-protection-system.git
 cd secure-data-protection-system
-
----
-
-##2. Run the application
-```bash
-python src/main.py
-
-⚙️ Optional: Virtual Environment Setup
-If you prefer to run the project in an isolated Python environment (recommended):
-
-```bash
-python -m venv venv
-venv\Scripts\activate   # Windows
-pip install -r requirements.txt
