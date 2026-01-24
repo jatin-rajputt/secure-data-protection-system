@@ -18,28 +18,31 @@ secure software engineering principles.
 
 ---
 ## 🏗️ Project Architecture
+
+```
 SECURE-DATA-PROTECTION-SYSTEM/
 │
 ├── src/
-│ ├── auth.py # Authentication & brute-force protection
-│ ├── crypto_engine.py # Encryption & decryption engine
-│ ├── integrity.py # File integrity verification
-│ ├── logger.py # Security logging
-│ └── main.py # Application controller
+│   ├── auth.py            # Authentication & brute-force protection
+│   ├── crypto_engine.py  # Encryption & decryption engine
+│   ├── integrity.py      # File integrity verification
+│   ├── logger.py         # Security logging
+│   └── main.py           # Application controller
 │
 ├── config/
-│ └── salt.bin # Cryptographic salt (runtime-generated)
+│   └── salt.bin           # Cryptographic salt (runtime-generated)
 │
 ├── data/
-│ ├── encrypted/ # Encrypted files
-│ └── decrypted/ # Decrypted files
+│   ├── encrypted/         # Encrypted files
+│   └── decrypted/         # Decrypted files
 │
 ├── logs/
-│ └── security.log # Security audit logs
+│   └── security.log       # Security audit logs
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
 
 
