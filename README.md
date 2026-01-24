@@ -19,7 +19,7 @@ secure software engineering principles.
 ---
 
 ## 🏗️ Project Architecture
-
+---
 SECURE-DATA-PROTECTION-SYSTEM/
 │
 ├── src/
