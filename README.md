@@ -17,9 +17,7 @@ secure software engineering principles.
 - Modular and scalable architecture
 
 ---
-
 ## 🏗️ Project Architecture
----
 SECURE-DATA-PROTECTION-SYSTEM/
 │
 ├── src/
@@ -44,7 +42,6 @@ SECURE-DATA-PROTECTION-SYSTEM/
 └── README.md
 
 
----
 
 ## 🔑 Security Concepts Used
 
