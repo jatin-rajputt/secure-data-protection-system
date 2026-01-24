@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Runtime data (SECURITY CRITICAL)
+data/
+logs/
+users.json
+config/salt.bin
