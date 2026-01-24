@@ -76,7 +76,6 @@ That’s it for the **main run flow**.
 
 If you also want the **virtual environment instructions**, add this **below** (not required for running):
 
-```md
 ## ⚙️ Optional: Virtual Environment Setup
 
 If you prefer to run the project in an isolated Python environment (recommended):
