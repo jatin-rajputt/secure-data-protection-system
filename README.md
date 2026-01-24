@@ -63,3 +63,27 @@ SECURE-DATA-PROTECTION-SYSTEM/
 ```bash
 git clone https://github.com/jatin-rajputt/secure-data-protection-system.git
 cd secure-data-protection-system
+
+### 2. Run the application
+```bash
+python src/main.py
+
+That’s it for the **main run flow**.
+
+---
+
+## ✅ OPTIONAL (Place AFTER the above, not inside it)
+
+If you also want the **virtual environment instructions**, add this **below** (not required for running):
+
+```md
+## ⚙️ Optional: Virtual Environment Setup
+
+If you prefer to run the project in an isolated Python environment (recommended):
+
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+pip install -r requirements.txt
+
+
