@@ -83,16 +83,14 @@ SECURE-DATA-PROTECTION-SYSTEM/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/secure-data-protection-system.git
+git clone https://github.com/jatin-rajputt/secure-data-protection-system.git
 cd secure-data-protection-system
 
 
-2. Create virtual environment
+``md
+If you prefer to run the project in an isolated Python environment (recommended):
+
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
-
-3. Install dependencies
 pip install -r requirements.txt
-
-4. Run the application
-python src/main.py
