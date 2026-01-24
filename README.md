@@ -63,11 +63,11 @@ SECURE-DATA-PROTECTION-SYSTEM/
 ```bash
 git clone https://github.com/jatin-rajputt/secure-data-protection-system.git
 cd secure-data-protection-system
-
+```
 ### 2. Run the application
 ```bash
 python src/main.py
-
+```
 That’s it for the **main run flow**.
 
 ---
