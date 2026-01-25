@@ -4,6 +4,7 @@ from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes# produce secure cryptography hash algo
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC # it take pass add salt, hash it, repeat hashing as itteration and produce key
 from integrity import generate_hash
+from security.key_management import derive_user_key
 
 def _get_salt():
     if not os.path.exists("config/salt.bin"):
@@ -29,8 +30,8 @@ def _derive_key(password: str)-> bytes:
 # Slows brute-force attacks
 # Industry standard (NIST)
 
-def encrypt_file(file_path: str, password: str):
-    cipher = Fernet(_derive_key(password))
+def encrypt_file(username, file_path: str, password: str):
+    cipher = Fernet(derive_user_key(username, password))
     
     with open (file_path, "rb")as f:
         encrypted_data = cipher.encrypt(f.read())
@@ -49,7 +50,7 @@ def encrypt_file(file_path: str, password: str):
 
 
 
-def decrypt_file(enc_path: str, password: str):
+def decrypt_file(username,enc_path: str, password: str):
     # --- Input validation ---
     if enc_path.endswith(".hash"):
         raise ValueError(
@@ -69,7 +70,7 @@ def decrypt_file(enc_path: str, password: str):
         )
 
     # --- Key derivation ---
-    cipher = Fernet(_derive_key(password))
+    cipher = Fernet(derive_user_key(username, password))
 
     # --- Read encrypted data ---
     with open(enc_path, "rb") as f:

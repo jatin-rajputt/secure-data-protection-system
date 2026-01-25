@@ -15,13 +15,13 @@ def secure_actions(username, password):
     
     if choice =="1":
         path = input("Enter file path: ")
-        output = encrypt_file(path, password)
+        output = encrypt_file(username, path, password)
         log_event(f"{username} encrypted file: {path}")
         print("Encrypted ->", output)
         
     elif choice =="2":
         path = input("Enter encrypted file path: ")
-        output = decrypt_file(path, password)
+        output = decrypt_file(username, path, password)
         log_event(f"{username} decrypted file: {path}")
         print("Decrypted ->", output)
         
