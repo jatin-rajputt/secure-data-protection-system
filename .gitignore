@@ -10,3 +10,4 @@ data/
 logs/
 users.json
 config/salt.bin
+config/user_salts/
